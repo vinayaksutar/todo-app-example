@@ -1,3 +1,50 @@
+<!--
+    Todo App - Test Repository
+
+    This is a simple, modern Todo App implemented in HTML, CSS, and JavaScript.
+    It demonstrates core features of a task management application, including:
+
+    Features:
+    - Add new tasks with description and category.
+    - View statistics: total, active, and completed tasks.
+    - Filter tasks by status (All, Active, Completed) and by category.
+    - Mark tasks as completed or active.
+    - Delete tasks.
+    - Responsive design for mobile and desktop.
+    - Persistent storage using localStorage.
+    - Visual feedback for empty states and interactive elements.
+    - Light and dark mode support (via CSS class).
+
+    Structure:
+    - Header: App title and subtitle.
+    - Stats: Displays counts for total, active, and completed tasks.
+    - Add Task Form: Input for task description and category selection.
+    - Filters: Buttons to filter tasks by status and category.
+    - Todo List: Displays tasks with controls for completion and deletion.
+    - Empty State: Shown when no tasks match the current filter.
+
+    JavaScript (TodoApp class):
+    - Manages state, rendering, and event handling.
+    - Methods:
+        - init(): Initializes app and event listeners.
+        - addTodo(): Adds a new task.
+        - toggleTodo(id): Toggles completion status.
+        - deleteTodo(id): Removes a task.
+        - setFilter(filter): Sets current filter and updates UI.
+        - getFilteredTodos(): Returns tasks matching current filter.
+        - saveTodos(): Persists tasks to localStorage.
+        - updateStats(): Updates statistics display.
+        - formatDate(dateString): Formats task creation date.
+        - render(): Renders the task list and empty state.
+
+    Usage:
+    - Open index.html in a browser.
+    - Interact with the UI to manage your tasks.
+
+    Note:
+    - All data is stored locally in the browser.
+    - No backend or external dependencies required.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
