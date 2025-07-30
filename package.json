@@ -1,0 +1,29 @@
+{
+  "name": "todo-app-example",
+  "version": "2.0.0",
+  "description": "A modern todo application with UI for testing GitHub automation",
+  "main": "index.html",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "serve": "python -m http.server 8080 || python3 -m http.server 8080"
+  },
+  "keywords": ["todo", "example", "testing", "github", "mcp"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "jest-environment-jsdom": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/assets/**"
+    ]
+  }
+}
