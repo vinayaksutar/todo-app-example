@@ -2,26 +2,44 @@
 import TodoList from './components/TodoList.js';
 import { StorageManager } from './utils/storage.js';
 
+/**
+ * Represents the main Todo application.
+ * Handles initialization, event listeners, theme toggling, and interaction with storage and todo list.
+ *
+ * @class
+ */
 class TodoApp {
-    constructor() {
-        this.todoList = new TodoList();
-        this.storage = new StorageManager();
-        this.init();
-    }
-
-    init() {
-        this.loadTodos();
-        this.setupEventListeners();
-        this.setupThemeToggle();
-    }
-
-    loadTodos() {
-        const todos = this.storage.getTodos();
-        todos.forEach(todo => this.todoList.addTodo(todo));
-    }
-
-    setupEventListeners() {
-        // Add todo form
+    /**
+     * Creates an instance of TodoApp.
+     * Initializes the todo list and storage manager, and sets up the application.
+     */
+    
+    /**
+     * Initializes the application by loading todos, setting up event listeners, and theme toggle.
+     * @private
+     */
+    
+    /**
+     * Loads todos from storage and adds them to the todo list.
+     * @private
+     */
+    
+    /**
+     * Sets up event listeners for adding todos and filtering by category.
+     * @private
+     */
+    
+    /**
+     * Sets up theme toggling based on user's preference stored in localStorage.
+     * @private
+     */
+    
+    /**
+     * Handles adding a new todo item from the input form.
+     * Saves the new todo to storage and updates the UI.
+     * @private
+     */
+}
         document.getElementById('addTodoForm').addEventListener('submit', (e) => {
             e.preventDefault();
             this.handleAddTodo();
